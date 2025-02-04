@@ -3,6 +3,10 @@ from streamlit_drawable_canvas import st_canvas
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+import os
+
+print(os.getcwd())
+print(os.listdir())
 
 model = tf.keras.models.load_model("cnn_model.keras")
 worst_model = tf.keras.models.load_model("cnn_worst_model.keras")
