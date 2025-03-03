@@ -11,7 +11,6 @@ if "model" not in st.session_state:
 if "worst_model" not in st.session_state:
     st.session_state.worst_model = tf.keras.models.load_model("cnn_worst_model.keras")
 if "rotate_model" not in st.session_state:
-    # st.session_state.rotate_model = tf.keras.models.load_model("cnn_rotate_model.keras")
     st.session_state.rotate_model = tf.keras.models.load_model("cnn_model8.keras")
 
 model = st.session_state.model
