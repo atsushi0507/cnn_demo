@@ -18,6 +18,9 @@ model = st.session_state.model
 worst_model = st.session_state.worst_model
 da_model = st.session_state.rotate_model
 
+model = st.session_state.model
+worst_model = st.session_state.worst_model
+
 st.title("手書き数字認識デモ")
 
 canvas_result = st_canvas(
