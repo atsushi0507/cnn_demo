@@ -7,8 +7,8 @@ import os
 import cv2
 
 if "model" not in st.session_state:
-    # st.session_state.model = tf.keras.models.load_model("cnn_model.keras")
-    st.session_state.model = tf.keras.models.load_model("cnn_model2.keras")
+    st.session_state.model = tf.keras.models.load_model("cnn_model.keras")
+    # st.session_state.model = tf.keras.models.load_model("cnn_model2.keras")
 if "worst_model" not in st.session_state:
     st.session_state.worst_model = tf.keras.models.load_model("cnn_worst_model.keras")
 if "rotate_model" not in st.session_state:
