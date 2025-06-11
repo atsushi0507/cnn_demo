@@ -7,7 +7,8 @@ import os
 import cv2
 
 if "model" not in st.session_state:
-    st.session_state.model = tf.keras.models.load_model("cnn_model.keras")
+    # st.session_state.model = tf.keras.models.load_model("cnn_model.keras")
+    st.session_state.model = tf.keras.models.load_model("cnn_model2.keras")
 if "worst_model" not in st.session_state:
     st.session_state.worst_model = tf.keras.models.load_model("cnn_worst_model.keras")
 if "rotate_model" not in st.session_state:
@@ -110,3 +111,9 @@ if st.button("判定する"):
             st.bar_chart(da_pred[0])
     else:
         st.warning("手書き入力してください")
+
+url_intro = "https://atsushi-datascience.com/blog/cnn-image-classification-basics"
+url_advanced = "https://atsushi-datascience.com/blog/cnn-image-classification-advanced"
+st.subheader("CNN に関する紹介ブログ")
+st.write(f"[入門編]({url_intro})")
+st.write(f"[実践編]({url_advanced})")
